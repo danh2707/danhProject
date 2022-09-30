@@ -14,6 +14,10 @@ body{
 img{
     max-width: 100%;
 }
+video{
+    max-width: 100%;
+    max-height: 50%;
+}
 .section{
     float: left;
     width: 100%;
@@ -28,104 +32,28 @@ img{
 /* ------ đổi màu khi chỉ vào -------- */
 a:link, a i:link{text-decoration: none; color: black}
 a:visited, a i:visited{text-decoration: none}
-a:hover, a i:hover{text-decoration: blink; color: #0b5ed7; cursor: pointer}
-a:active, a i:active{text-decoration: none; color: #0a53be; cursor: pointer}
+a:hover, a i:hover{text-decoration: blink; color: royalblue; cursor: pointer}
+a:active, a i:active{text-decoration: none; color: royalblue; cursor: pointer}
 
 
 
 /* ------------------ A) PHẦN HEADER ------------------ */
-/* --------------- A1) Phần PINK-HEADER --------------- */
 header .container{
-    /*Thêm 2 thuộc tính cho container*/
+    /*Thêm thuộc tính cho container*/
     display: flex;
     justify-content: space-between;
-}
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: transparent;
-    backdrop-filter: blur(6px) opacity(1);
-
-}
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fdedf0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 55px;
-    width: 600px;
-    text-align: center;
-    letter-spacing: normal;
-    word-spacing: normal;
-}
-/* The Close Button */
-.close {
-    background-color: #fdedf0;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    line-height: 0.6;
-    font-size: 50px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.modal-name{
-    background-color: #fdedf0;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-.modal-title{
-    background-color: #fdedf0;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-.modal-excerpt{
-    background-color: #fdedf0;
-    color: #858585;
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-transform: none;
-}
-.modal-content .modal-form-container form{
-    background-color: #fdedf0;
-    display: flex;
-    justify-content: space-between;
-}
-.modal-content .modal-form-container form input[name="first-name"] {
-    flex-basis: 39%;
-    width: 39%;
-}
-.modal-content .modal-form-container form input[name="email-address"] {
-    flex-basis: 39%;
-    width: 39%;
-}
-.modal-content .modal-form-container form button{
-    flex-basis: 20%;
-    width: 20%;
-    margin-left: 0;
 }
 /* --------------- A2) Phần MAIN-HEADER --------------- */
 .main-header{
-    padding: 15px 0;
+    padding: 0;
 }
 .main-header .site-logo{
-    width: 36%;
+    width: 18%;
+    padding-top: 20px;
 }
 .main-header .categories-nav{
     width: 38%;
-    padding: 10px 0;
+    padding-top: 20px;
 }
 .categories-nav ul{
     list-style: none;
@@ -141,15 +69,15 @@ header .container{
     transform: scale(1.1);
 }
 .categories-nav img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     display: block;
     margin: 0 auto 5px;
 }
 .header-search{
     width: 21%;
     float: none;
-    padding: 23px 0;
+    padding-top: 20px;
 }
 .search-form{
     width: 100%;
@@ -193,7 +121,7 @@ header .container{
     display: none;
 }
 .sticky-header .site-logo{
-    width: 26%;
+    width: 15%;
     display: flex;
     align-items: center;
 }
@@ -262,7 +190,8 @@ nav{
     border-top: 1px solid #4169e1;
     box-sizing: border-box;
     max-width: 100%;
-    background-color: steelblue;
+    background-color: skyblue;
+    text-align: center;
 }
 .nav .container{
     height: 50px;
@@ -277,9 +206,12 @@ nav{
     width: 20%;
     padding-top: 14px;
 }
+.link-nav{
+    color: black;
+}
 /* ------------ Style menu dropdown ---------------*/
 .dropbtn{
-    background-color: steelblue;
+    background-color: skyblue;
     color: #212121;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
@@ -298,14 +230,14 @@ nav{
     position: absolute;
     min-width: 200px;
     padding: 16px 0;
-    border-left: 5px solid #4169e1;
-    box-shadow: 0 8px 16px 0 royalblue;
+    border-left: 5px solid skyblue;
     z-index: 1;
 }
 .dropdown-content a{
     padding: 2px 16px;
     text-decoration: none;
     display: block;
+    color: black;
 
 }
 .dropdown-content a:hover{
@@ -318,14 +250,48 @@ nav{
     color: #4169e1;
 }
 
-
-.main .container{
-    overflow: hidden;
+/* Secsion main */
+.page-cta_title{
+    font-family: 'Josefin Sans', sans-serif;
 }
+.page-cta_title_wc{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+}
+.page-cta_content{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+}
+.page-cta_button{
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    color: #212121;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid royalblue;
+    text-align: center;
+    border-radius: 50%;
+
+}
+.page-cta_action{
+    width: 20%;
+    height: 30px;
+    margin-left: 40%;
+}
+.page-cta_button a{
+    color: white;
+}
+
+
+
+
+/* FOOTER*/
 footer {
     margin-top: 35px;
-    background-image: url("../images/background-nav.jpg");
-    background-size: cover;
+    background-color: skyblue;
     background-position: top center;
     background-repeat: no-repeat;
     padding: 70px 0 0;
@@ -336,35 +302,14 @@ footer {
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    footer {
-        padding: 90px 0 0
-    }
-}
-
 footer .ant-mailchimp {
-    display: flex
+    display: flex;
+    margin-bottom: 15px;
 }
-
-@media (max-width: 767px) {
-    footer .ant-mailchimp {
-        flex-direction: column
-    }
-}
-
 footer .ant-mailchimp .ant-newsletter-title {
     padding-right: 15px;
     border-right: 2px solid #000000;
 }
-
-@media (max-width: 767px) {
-    footer .ant-mailchimp .ant-newsletter-title {
-        padding-right: 0;
-        border-right: none;
-        margin-bottom: 15px
-    }
-}
-
 footer .ant-mailchimp .ant-newsletter-title .title {
     font-size: 24px;
     font-weight: 600;
@@ -380,27 +325,20 @@ footer .ant-mailchimp .ant-newsletter-title p {
 
 footer .ant-mailchimp .ant-mailchim-form {
     width: 100%;
-    margin: 0;
+    margin: 10px;
     display: flex;
-    margin: auto;
     margin-left: 30px
 }
 
-@media (max-width: 767px) {
-    footer .ant-mailchimp .ant-mailchim-form {
-        margin-left: 0
-    }
-}
-
 footer .ant-mailchimp .ant-mailchim-form form {
-    margin-bottom: 0;
+    margin: 10px;
     width: 100%;
     position: relative;
-    height: 40px
+    height: 50%
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input {
-    background: #4a4a4a;
+    background: white;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -410,129 +348,121 @@ footer .ant-mailchimp .ant-mailchim-form form input {
     box-shadow: none;
     outline: none;
     width: 100%;
-    color: #fff
+    color: gray;
+    margin: 10px;
+}
+footer .ant-mailchimp .ant-mailchim-form form textarea {
+    background: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    color: gray;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input::-webkit-input-placeholder {
-    color: black;
+    color: gray;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input::-moz-placeholder {
-    color: black;
+    color: gray;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input:-ms-input-placeholder {
-    color: black;
+    color: gray;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form input:-moz-placeholder {
-    color: black;
+    color: gray;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form button {
+    background: white;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    background-color: royalblue;
-    color: #fff;
     border: none;
-    outline: none;
     box-shadow: none;
-    position: absolute;
-    right: 7px;
-    top: 50%;
-    transform: translate(0, -50%);
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    font-weight: 700;
-    height: auto
+    outline: none;
+    color: black;
+    width: 25%;
 }
 
 footer .ant-mailchimp .ant-mailchim-form form button:hover,
 footer .ant-mailchimp .ant-mailchim-form form button:focus {
-    color: #fff;
+    color: black;
     background-color: royalblue;
     border: none;
     outline: none;
     box-shadow: none
 }
 
-footer .footer-main {
-    margin-top: 50px;
-    margin-bottom: 20px
-}
-
-@media (max-width: 767px) {
-    footer .footer-main {
-        margin-top: 30px
-    }
-}
-
-footer .footer-main .footer-nav-logo {
+footer .footer-nav-logo {
     color: #fff
 }
 
-footer .footer-main .footer-nav-logo .logo-wrapper {
+footer .footer-nav-logo .logo-wrapper {
     margin-bottom: 10px;
     display: block
 }
 
-footer .footer-main .footer-nav-logo .logo-wrapper img {
+footer  .footer-nav-logo .logo-wrapper img {
     max-width: 200px
 }
 
-footer .footer-main .footer-nav-logo .footer-slogan {
+footer  .footer-nav-logo .footer-slogan {
     color: black;
     margin-bottom: 8px
 }
 
-footer .footer-main .footer-nav-logo .footer-slogan a {
-    color: #008374;
+footer .footer-nav-logo .footer-slogan a {
+    color: royalblue;
     font-weight: 700
 }
 
-footer .footer-main .footer-nav-logo .footer-slogan a:hover,
-footer .footer-main .footer-nav-logo .footer-slogan a:focus {
-    color: #005047
+footer .footer-nav-logo .footer-slogan a:hover,
+footer .footer-nav-logo .footer-slogan a:focus {
+    color: royalblue;
 }
 
-footer .footer-main .footer-nav-logo .footer-tel,
-footer .footer-main .footer-nav-logo .evo-in {
-    color: #fff;
+footer .footer-nav-logo .footer-tel,
+footer .footer-nav-logo .evo-in {
+    color: black;
     font-weight: 700;
     margin-bottom: 8px
 }
 
-footer .footer-main .footer-nav-logo .footer-tel a,
-footer .footer-main .footer-nav-logo .evo-in a {
-    color: #fff
+footer .footer-nav-logo .footer-tel a:hover,
+footer .footer-nav-logo .footer-tel a:focus,
+footer .footer-nav-logo .evo-in a:hover,
+footer .footer-nav-logo .evo-in a:focus {
+    color: royalblue;
 }
 
-footer .footer-main .footer-nav-logo .footer-tel a:hover,
-footer .footer-main .footer-nav-logo .footer-tel a:focus,
-footer .footer-main .footer-nav-logo .evo-in a:hover,
-footer .footer-main .footer-nav-logo .evo-in a:focus {
-    color: #008374
-}
-
-footer .footer-main .footer-nav-logo .social {
+footer .footer-nav-logo .social {
     margin-top: 15px
 }
 
-footer .footer-main .footer-nav-logo .social a {
+footer .footer-nav-logo .social a {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    background-color: #fff;
+    background-color: black;
     border-radius: 50%;
     display: inline-block;
     position: relative
 }
 
-footer .footer-main .footer-nav-logo .social a svg {
+footer .footer-nav-logo .social a svg {
     height: 20px;
     width: 20px;
     margin: auto;
@@ -543,73 +473,73 @@ footer .footer-main .footer-nav-logo .social a svg {
     bottom: 0
 }
 
-footer .footer-main .footer-nav-logo .social a svg path {
+footer .footer-nav-logo .social a svg path {
     fill: #292a2d
 }
 
-footer .footer-main .footer-nav-logo .social a+a {
+footer .footer-nav-logo .social a+a {
     margin-left: 10px
 }
 
-footer .footer-main .footer-nav-logo .social a:hover {
-    background-color: #008374
+footer .footer-nav-logo .social a:hover {
+    background-color: royalblue;
 }
 
-footer .footer-main .footer-nav-logo .social a:hover svg path {
+footer .footer-nav-logo .social a:hover svg path {
     fill: #292a2d
 }
 
 @media (max-width: 767px) {
-    footer .footer-main .footer-nav-menu {
+    footer .footer-nav-menu {
         margin-top: 15px
     }
 }
 
-footer .footer-main .footer-nav-menu .footer-title {
+footer .footer-nav-menu .footer-title {
     display: block;
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: 700
 }
 
-footer .footer-main .footer-nav-menu .footer-menu a {
+footer .footer-nav-menu .footer-menu a {
     display: block;
     font-size: 15px;
     color: black;
 }
 
-footer .footer-main .footer-nav-menu .footer-menu a:hover,
-footer .footer-main .footer-nav-menu .footer-menu a:focus {
-    color: #008374
+footer .footer-nav-menu .footer-menu a:hover,
+footer .footer-nav-menu .footer-menu a:focus {
+    color: royalblue;
 }
 
-footer .footer-main .footer-nav-menu .footer-menu a+a {
+footer .footer-nav-menu .footer-menu a+a {
     margin-top: 6px
 }
 
-footer .copyright {
+.copyright {
     border-top: 1px solid #3b3c3e;
     padding: 15px 0;
     font-size: 14px;
     color: black;
 }
 
-footer .copyright a {
+.copyright a {
     color: black;
 }
 
-footer .copyright a:hover,
-footer .copyright a:focus {
-    color: #008374
+.copyright a:hover,
+.copyright a:focus {
+    color: royalblue;
 }
 
-footer .back-to-top {
+.back-to-top {
     position: absolute;
     right: 10px;
     bottom: 60px;
     font-size: 14px;
     cursor: pointer;
-    color: #fff;
+    color: black;
     top: auto !important;
     height: 40px;
     width: 40px;
@@ -624,13 +554,13 @@ footer .back-to-top {
     visibility: hidden
 }
 
-footer .back-to-top:hover {
-    color: #fff;
-    background-color: #008374;
-    border-color: #005a50
+.back-to-top:hover {
+    color: white;
+    background-color: skyblue;
+    border-color: royalblue;
 }
 
-footer .back-to-top.show {
+.back-to-top.show {
     position: fixed;
     z-index: 999;
     transition: all 0.3s ease-out 0s;
