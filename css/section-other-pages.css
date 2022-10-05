@@ -211,3 +211,16 @@ section{
 img{
     border-radius: 50px;
 }
+.group{
+    /*text-align: justify;*/
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.group p{
+    font-size: 18px;
+}
+.gp{
+    text-align: center;
+    font-family: Roboto;
+
+}
