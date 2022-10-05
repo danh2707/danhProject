@@ -1,21 +1,25 @@
+.title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 /*-----VISIT-----*/
 .visit-content{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: skyblue;
+    color: steelblue;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .link-content{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .link-content a:hover{
-    color: royalblue;
+    color: steelblue;
 }
 .visit-content a:hover{
-    color: royalblue;
+    color: steelblue;
 }
 /*----animal & exhibits----*/
 .explore1 h1{
@@ -23,7 +27,7 @@
     margin-bottom: 0;
     text-transform: capitalize;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     font-size:2.5em;
 }
 .explore2 p{
@@ -52,15 +56,13 @@ h2{
 }
 p{
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
 
 }
 /*----danh----*/
 .container-sm{
 }
-.danh1{
-    margin-top: 10px;
-}
+
 .h4{
     text-align: justify;
 }
@@ -69,7 +71,7 @@ p{
     /*border: 1px solid royalblue;*/
     /*background: royalblue  ;*/
     /*color: white;*/
-    background-color:#0a53be;
+    background-color:steelblue;
     color: white;
     padding: 14px 25px;
 
@@ -80,13 +82,14 @@ p{
 }
 .col-3 a:hover{
     background: white;
-    color: #0a58ca;
-    border: 2px solid #0b5ed7;
+    color: steelblue;
+    border: 2px solid steelblue;
 
 }
 .a2{
     text-align: center;
     margin-top:20px;
+    font-size: 14px;
 }
 .a3 a{
     max-width: 150px;
@@ -104,7 +107,7 @@ section{
 }
 .view-details{
     text-align: center;
-    background-color: skyblue;
+    background-color: steelblue;
     color: white;
     border-radius: 20%;
 }
@@ -115,4 +118,96 @@ section{
 .pct-1{
     color: #333333;
     font-size: 20px;
+}
+/*-----MAP----*/
+.title-map{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: white;
+}
+.content-map{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.map{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*---out mission---*/
+.page-content{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*----Giá và giờ nhập học---*/
+.container-md{
+    width: 1200px;
+    margin-bottom: 30px;
+}
+.page-content{
+    background-color: white;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content{
+    line-height: 1.25;
+}
+.button{
+    color: white;
+    font-size: 20px;
+    border: 2px solid #36648B;
+    width: 50%;
+    background-color: steelblue;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 50px;
+}
+.button a{
+    color: white;
+}
+.button:hover{
+    background-color: white;
+    border: 2px solid #36648B;
+}
+.button a:hover{
+    color: black;
+}
+
+/*----Encounter-----*/
+.name-content{
+    margin-top: 30px;
+}
+/*---feeding schdule--*/
+.radius{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.radius-img{
+    border-radius: 100%;
+}
+/*Penguin*/
+.col-6 h1{
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.col-6 p{
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    margin: 20px 0;
+}
+img{
+    border-radius: 50px;
 }
